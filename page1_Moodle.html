@@ -1,0 +1,104 @@
+<div style="font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+">
+<h2 style="color: #2c3e50; font-family: Arial, sans-serif;">ENG200 Week 1 - Lectures Summary</h2>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>1. What is the purpose of a compiler?</strong></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">Show Answer</button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        A compiler converts <b>high-level code</b> into <b>low-level (machine) code</b> that a computer can understand.
+    </div>
+</div>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>2. Identify the error in the following C program:</strong></p>
+    <p style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px; display: inline-block;">
+        #include &lt;stdio.h&gt;<br>
+        int main() { <br>
+        &nbsp;&nbsp;&nbsp; printf("Hello World!") <br>
+        &nbsp;&nbsp;&nbsp; return 0; <br>
+        }
+    </p>
+    <p style="margin-bottom: 10px;"></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">Show Answer</button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        The missing <b>semicolon (`;`)</b> after <b><span style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px;">printf("Hello World!")</span></b> causes a compilation error.
+    </div>
+</div>
+
+<!-- Similar formatting applied for the other questions -->
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>3. What is the difference between local and global variables?</strong></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">Show Answer</button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        <p>- <b>Local variables</b> are <b>declared inside a function</b> and can only be used <b>within that function</b>.</p>
+        <p>- <b>Global variables</b> are <b>declared outside any function</b> and can be <b>used anywhere</b> in the program.</p>
+    </div>
+</div>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>4. What will be the output of the following code?</strong></p>
+    <p style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px; display: inline-block;">
+        int a = 3; <br> int b = 6; <br> int c = a + b; <br> printf("%d", c);
+    </p>
+    <p style="margin-bottom: 10px;"></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" 
+        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+        Show Answer
+    </button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        The output will be <b>9</b> since <b><span style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px;">c = a + b</span></b> 
+        results in <b>3 + 6 = 9</b>.
+    </div>
+</div>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>5. What is the correct syntax for scanning user input?</strong></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" 
+        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+        Show Answer
+    </button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        <p>Use the <b><span style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px;">scanf()</span></b> function:</p>
+        <p style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px; display: inline-block;">
+            int a; <br> scanf("%d", &a);
+        </p>
+    </div>
+</div>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>6. What are the rules for defining an identifier in C?</strong></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" 
+        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+        Show Answer
+    </button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        <p>- Must consist of <b>letters, digits, or underscores (`_`)</b>.</p>
+        <p>- Cannot <b>start with a digit</b>.</p>
+        <p>- Cannot contain <b>spaces or special characters</b> (e.g., `-`).</p>
+        <p>- Cannot use <b>reserved keywords</b> (e.g., `int, return`).</p>
+        <p>- <b>Case-sensitive</b>: `Variable1` ≠ `variable1`.</p>
+    </div>
+</div>
+
+<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+    <p><strong>7. What are comments in C, and what are their types?</strong></p>
+    <button style="background: #3498db; color: white; padding: 8px 12px; border: none; cursor: pointer; border-radius: 3px; font-size: 1rem;" 
+        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+        Show Answer
+    </button>
+    <div style="display: none; margin-top: 10px; padding: 10px; background: #e6e6e6; border-left: 5px solid #3498db; font-style: italic;">
+        <b>Comments</b> are used to describe code without affecting execution.  
+        <p>- <b>Single-line comment</b>: <span style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px;">// This is a comment</span></p>  
+        <p>- <b>Multi-line (block) comment</b>: <span style="font-family: 'Courier New', monospace; background: #e6e6e6; padding: 5px; border-radius: 3px;">/* This is a block comment */</span></p>
+    </div>
+</div>
+
+
+
+
+</div>
